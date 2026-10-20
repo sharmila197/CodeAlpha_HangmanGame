@@ -1,51 +1,63 @@
-# Hangman Game – Python
+# 🎮 Hangman Game – Python & Streamlit
 
 ## About the Project
-Hangman is a simple text-based word guessing game developed using Python. The player must guess a hidden word one letter at a time. The game randomly selects a word from a predefined list of five words.
+Hangman Game is an interactive word-guessing game developed using Python and Streamlit.
 
-The player has a maximum of six incorrect guesses to find the word.
+The computer randomly selects a word from a predefined list of five words. The player must guess the hidden word by selecting one letter at a time.
+
+The player has a maximum of six incorrect guesses to find the correct word.
 
 ## Features
+- Interactive web-based game interface using Streamlit.
 - Random word selection from five predefined words.
-- Guess the hidden word one letter at a time.
-- Maximum of six incorrect guesses.
-- Displays correctly guessed letters and hides the remaining letters.
-- Prevents repeated guesses.
-- Displays a winning or losing message.
+- Letter selection using interactive buttons.
+- Displays hidden and correctly guessed letters.
+- Tracks incorrect guesses and remaining lives.
+- Displays winning and losing messages.
+- Play Again option to start a new game.
 
 ## Technologies Used
 - Python
+- Streamlit
 - Random module
-- While loop
-- If-else conditions
-- Strings and lists
+- Session State
+- Conditional statements
+- Loops and lists
+
+## Installation
+
+Install the required Python library:
+
+```bash
+python -m pip install streamlit
+```
 
 ## How to Run
 
-1. Download or clone this repository.
+1. Clone or download this repository.
 2. Open the project folder in VS Code.
 3. Open the terminal.
 4. Run the following command:
 
 ```bash
-python hangman.py
+python -m streamlit run hangamon.py
 ```
 
-5. Enter one letter at a time to guess the hidden word.
+5. Open the local URL displayed in the terminal to play the game in your browser.
 
 ## Game Rules
-1. The computer randomly selects a word.
-2. The player guesses one letter at a time.
-3. Correct guesses reveal the letter.
-4. Incorrect guesses increase the number of attempts used.
-5. The player wins by guessing all the letters before reaching six incorrect guesses.
+1. The computer randomly selects a hidden word.
+2. Select one letter at a time using the buttons.
+3. Correct guesses reveal the letters in the word.
+4. Incorrect guesses reduce the remaining lives.
+5. Guess the complete word before losing all six lives to win the game.
 
 ## Project Structure
 
 ```text
 CodeAlpha_HangmanGame/
 │
-├── hangman.py
+├── hangamon.py
 └── README.md
 ```
 
